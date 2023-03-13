@@ -12,8 +12,6 @@ jobs:
   build-and-publish:
     runs-on: ubuntu-18.04
     steps:
-      - name: Prepare - Set up QEMU
-        uses: docker/setup-qemu-action@v1
       - name: Prepare - Set up Docker Buildx
         uses: docker/setup-buildx-action@v1
       - name: Prepare - Get Docker Meta
